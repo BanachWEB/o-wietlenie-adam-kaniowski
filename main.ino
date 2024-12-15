@@ -273,6 +273,7 @@ void logMemoryUsage() {
   Serial.println(" bytes");
   if (freeMemory < (int)(TOTAL_RAM * (1 - WARNING_THRESHOLD))) {
     Serial.println("WARNING: Free memory is critically low!");
+    // Optional reaction to critical memory
   }
 }
 
@@ -283,6 +284,8 @@ void logBufferStatus() {
   Serial.print(" / ");
   Serial.println(BUFFER_SIZE);
   if (bufferIndex >= (uint8_t)(BUFFER_SIZE * WARNING_THRESHOLD)) {
-    Serial.println("WARNING: Buffer usage is near capacity!");
+    Serial.println("WARNING: Buffer usage is near capacity! Automatically clearing buffer.");
+    clearBuffer(); // Automatically clear buffer when usage is near capacity
   }
 }
+
