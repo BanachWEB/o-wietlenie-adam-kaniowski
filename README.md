@@ -2,7 +2,8 @@
 ### Projekt oświetlenia schodów dla Adama Kaniowskiego. 
 
 ## Uwagi ogólne:
-Nie znam się ani na C++ ani na Arduino, ale postarałem się wdrożyć wiedzę z innych dziedzin programowania, głównie JavaScript i pomoc ChatGPT-4o. 
+Nie znam się ani na C++ ani na Arduino, ale postarałem się wdrożyć wiedzę z innych dziedzin programowania, głównie JavaScript i pomoc ChatGPT-4o.
+Nie mam pewności, że sprawdzanie maksymalnej pamięci RAM jest dobrze dososowane do specyfikacji sprzętowej jaka jest używana w systemie oświetlenia.
 
 ## Główny plik to main.ino
 wersja-oryginalna.ino to kod przesłany do mnie, który został refaktoryzowany na wersja-oryginalna-refactor.ino, w tej wersji nie została dodana żadna znacząca zmiana w logice jedynie w strukturze kodu. 
@@ -36,6 +37,8 @@ Alternatywa dla Mega 2560: Jeśli pojawią się problemy z wydajnością, można
 Animacje: Warto przemyśleć sposób implementacji nowych animacji, aby były one definiowane w zunifikowany sposób (np. jako funkcje przechowywane w tablicy wskaźników na funkcje).
 
 Testy długoterminowe: Zalecam przetestowanie kodu pod kątem stabilności w długim czasie, szczególnie przy obciążeniu i intensywnym użytkowaniu.
+
+Modularyzacja kodu: Można rozważyć podzielenie kodu na mniejsze moduły, by zwiększyć czytelność kodu. Każdy moduł jest odpowiedzialny za jedno konkretne zagadnienie np. definiowanie aminacji.
 
 ## Podsumowanie
 Kod jest obecnie bardziej czytelny i łatwiejszy do utrzymania. Jeśli zależy Ci na skalowalności (np. dodawaniu większej liczby animacji), warto rozważyć przejście na platformę z większymi możliwościami.
