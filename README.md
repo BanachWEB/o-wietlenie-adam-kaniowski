@@ -3,6 +3,7 @@
 
 ## Uwagi ogólne:
 Nie znam się ani na C++ ani na Arduino, ale postarałem się wdrożyć wiedzę z innych dziedzin programowania, głównie JavaScript i pomoc ChatGPT-4o.
+
 Nie mam pewności, że sprawdzanie maksymalnej pamięci RAM jest dobrze dososowane do specyfikacji sprzętowej jaka jest używana w systemie oświetlenia.
 
 ## Główny plik to main.ino
