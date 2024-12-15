@@ -4,7 +4,7 @@ Projekt oświetlenia schodów dla Adama Kaniowskiego.
 ## Uwagi ogólne:
 Nie znam się ani na C++ ani na Arduino, ale postarałem się wdrożyć wiedzę z innych dziedzin programowania(głównie JavaScript) i pomoc ChatGPT-4o. 
 
-### Główny plik to main.c++.
+## Główny plik to main.c++.
 wersja-oryginalna.c++ to kod przesłany do mnie, który został refaktoryzowany na wersja-oryginalna-refactor.c++, w tej wersji nie została dodana żadna znacząca zmiana w logice jedynie w strukturze kodu. 
 
 ## Refaktoryzacja kodu wprowadza kilka kluczowych ulepszeń, które warto podkreślić:
