@@ -4,7 +4,7 @@
 ## Uwagi ogólne:
 Nie znam się ani na C++ ani na Arduino, ale postarałem się wdrożyć wiedzę z innych dziedzin programowania, głównie JavaScript i pomoc ChatGPT-4o. 
 
-## Główny plik to main.ino.
+## Główny plik to main.ino
 wersja-oryginalna.ino to kod przesłany do mnie, który został refaktoryzowany na wersja-oryginalna-refactor.ino, w tej wersji nie została dodana żadna znacząca zmiana w logice jedynie w strukturze kodu. 
 
 ## Refaktoryzacja kodu wprowadza kilka kluczowych ulepszeń, które warto podkreślić:
@@ -37,5 +37,5 @@ Animacje: Warto przemyśleć sposób implementacji nowych animacji, aby były on
 
 Testy długoterminowe: Zalecam przetestowanie kodu pod kątem stabilności w długim czasie, szczególnie przy obciążeniu i intensywnym użytkowaniu.
 
-Podsumowanie
+## Podsumowanie
 Kod jest obecnie bardziej czytelny i łatwiejszy do utrzymania. Jeśli zależy Ci na skalowalności (np. dodawaniu większej liczby animacji), warto rozważyć przejście na platformę z większymi możliwościami.
