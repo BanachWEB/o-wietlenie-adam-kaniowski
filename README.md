@@ -1,5 +1,5 @@
 # oswietlenie-adam-kaniowski
-Projekt oświetlenia schodów dla Adama Kaniowskiego. 
+### Projekt oświetlenia schodów dla Adama Kaniowskiego. 
 
 ## Uwagi ogólne:
 Nie znam się ani na C++ ani na Arduino, ale postarałem się wdrożyć wiedzę z innych dziedzin programowania, głównie JavaScript i pomoc ChatGPT-4o. 
