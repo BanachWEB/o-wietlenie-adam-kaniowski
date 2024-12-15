@@ -1,6 +1,9 @@
 # oswietlenie-adam-kaniowski
 Projekt oświetlenia schodów dla Adama Kaniowskiego. 
 
+## Uwagi ogólne:
+Nie znam się ani na C++ ani na Arduino, ale postarałem się wdrożyć wiedzę z innych dziedzin programowania(głównie JavaScript) i pomoc ChatGPT-4o. 
+
 ### Główny plik to main.c++.
 wersja-oryginalna.c++ to kod przesłany do mnie, który został refaktoryzowany na wersja-oryginalna-refactor.c++, w tej wersji nie została dodana żadna znacząca zmiana w logice jedynie w strukturze kodu. 
 
@@ -16,13 +19,15 @@ Korzystanie z constexpr zamiast #define: Współczesne C++ preferuje constexpr j
 
 Modularność animacji: Logika związana z animacjami jest lepiej oddzielona od pozostałych elementów kodu. Dzięki temu można łatwiej dodawać nowe efekty.
 
+## Zmiany wprowadzone w main.c++:
+
 Zmniejszenie BUFFER_SIZE: Zmieniono wielkość bufora z 64 na 8 bajtów, bufor nie jest aktualnie używany w programie. Dzięki temu zwolniono 56 bajtów pamięci.
 
-Dodano bardziej szczegółowe logowanie błędów: Wysyłanie logów do portu szeregowego co 30 sekund i ostrzeżenia przy zapełnianiu się bufora i pamięci RAM, co ułatwi diagnostykę problemów w działającym urządzeniu.
+Dodano bardziej szczegółowe logowanie błędów: Wysyłanie logów do portu szeregowego co 30 sekund i ostrzeżenia przy zapełieniu bufora i pamięci RAM powyżej 90%, co ułatwi diagnostykę problemów w działającym urządzeniu.
 
 
 ## Uwagi do dalszej optymalizacji:
-Pamięć RAM: Arduino Mega 2560 ma ograniczoną pamięć RAM (2 KB???). Obsługa taśmy LED o długości 950 pikseli, szczególnie przy dużej liczbie animacji, może ją mocno obciążać. Warto monitorować użycie pamięci w czasie pracy, szczególnie przy dodawaniu bardziej złożonych efektów.
+Pamięć RAM: Arduino Mega 2560 ma ograniczoną pamięć RAM (2 KB - do weryfikacji!!!). Obsługa taśmy LED o długości 950 pikseli, szczególnie przy dużej liczbie animacji, może ją mocno obciążać. Warto monitorować użycie pamięci w czasie pracy, szczególnie przy dodawaniu bardziej złożonych efektów.
 
 Segmentacja danych LED: Segmentacja danych LED polega na dzieleniu całego paska diod LED na mniejsze grupy (segmenty), które są obsługiwane sekwencyjnie. Dzięki temu w danym momencie przetwarzana jest tylko część paska, co zmniejsza zapotrzebowanie na pamięć RAM.
 
