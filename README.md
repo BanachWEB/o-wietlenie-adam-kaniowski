@@ -1,6 +1,9 @@
 # oswietlenie-adam-kaniowski
 Projekt oświetlenia schodów dla Adama Kaniowskiego. 
 
+### Główny plik to main.c++.
+wersja-oryginalna.c++ to kod przesłany do mnie, który został refaktoryzowany na wersja-oryginalna-refactor.c++, w tej wersji nie została dodana żadna znacząca zmiana w logice jedynie w strukturze kodu. 
+
 ## Refaktoryzacja kodu wprowadza kilka kluczowych ulepszeń, które warto podkreślić:
 
 Stałe zamiast magicznych liczb: Przeniosłem wartości takie jak liczba LED, jasność czy limity odległości do constexpr. Dzięki temu kod jest bardziej czytelny, łatwiejszy do modyfikacji i mniej podatny na błędy.
