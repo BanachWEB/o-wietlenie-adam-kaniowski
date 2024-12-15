@@ -1,2 +1,2 @@
-# o-wietlenie-adam-kaniowski
+# oswietlenie-adam-kaniowski
 Projekt oświetlenia schodów dla Adama Kaniowskiego. 
